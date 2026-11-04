@@ -1,0 +1,12 @@
+{
+  "name": "idpd/meepleshop",
+  "description": "Aplicación para la gestión de los usuarios de un club",
+  "version": "0.1.0",
+  "type": "project",
+  "require": {
+    "php": "^8.5"
+  },
+  "scripts": {
+    "serve": "php -S localhost:8000"
+  }
+}

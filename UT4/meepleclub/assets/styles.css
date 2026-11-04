@@ -1,0 +1,14 @@
+.bg-light {
+    background-color: white;
+    color: black;
+}
+
+.bg-dark {
+    background-color: black;
+    color: white;
+}
+
+.error {
+    color: white;
+    background-color: red;
+}
