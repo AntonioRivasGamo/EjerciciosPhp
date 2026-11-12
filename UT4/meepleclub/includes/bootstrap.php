@@ -6,6 +6,7 @@ if (!is_string($theme) || !in_array($theme, ['light', 'dark'])) {
     $theme = 'light';
 }
 ini_set("session.use_strict_mode",1);
+
 session_set_cookie_params(
     [
         'httponly' => true,
@@ -15,4 +16,8 @@ session_set_cookie_params(
         'lifetime' => 0
     ]
 );
+
 session_start();
+
+require_once __DIR__ . '/auth.php';
+require_once __DIR__ . '/navigation.php';

@@ -18,6 +18,7 @@
             <p>Aplicación para aficionados a los juegos de mesa</p>
         </section>
         <a class="button" href="preferences.php">Ir a preferencias</a>
+        <a class="button" href="login.php">Ir a login</a>
         <p>Nos han visitado <?= $_SESSION['visitas'] ?> veces</p>
     </main>
 </body>
