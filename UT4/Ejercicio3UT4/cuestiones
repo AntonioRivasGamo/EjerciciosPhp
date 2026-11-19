@@ -1,0 +1,6 @@
+1. ¿Qué diferencia existe entre password_hash() y cifrar una contraseña?
+El password_hash() usa una funcion hash unidireccional mientras que el cifrar es una funcion bidireccional mediante una clave, por lo que el password_hash() es mas seguro.
+2. ¿Por qué debemos regenerar el identificador de sesión después del login?
+Porque sería vulnerable al ataque de Session Fixation.
+3. ¿Qué información mínima necesita realmente la sesión para identificar al usuario?
+El dato que se use en la base de datos / fuente de datos como identificador.

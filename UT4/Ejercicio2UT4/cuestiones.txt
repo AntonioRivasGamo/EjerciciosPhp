@@ -1,0 +1,6 @@
+1. ¿Qué parte del estado está en el navegador y qué parte está realmente en el servidor?
+El navegador guarda el identificador de la sesion mientras que el servidor guarda las variables de la sesion.
+2. ¿En qué se diferencia unset($_SESSION[...]) de destruir completamente la sesión?
+Unset solo borra la variable en cuestion mientras que destruir la sesion borra todos los datos de la sesion junto a ella.
+3. ¿Por qué no utilizarías una sesión como almacenamiento permanente de información de negocio?
+Porque la sesion no es persistente, es temporal.

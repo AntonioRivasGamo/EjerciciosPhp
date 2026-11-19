@@ -1,0 +1,14 @@
+{
+  "name": "antonio-rivas'gamo/ejercicio4ut4",
+  "description": "PANEL DE SOPORTE CON ROLES",
+  "type": "project",
+  "require": {
+    "php": "^8.4"
+  },
+  "scripts": {
+    "serve": "php -S localhost:8000 -t public"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}

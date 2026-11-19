@@ -1,0 +1,6 @@
+1. ¿Por qué no deberías confiar en un valor de cookie aunque lo haya creado originalmente tu aplicación?
+Porque el usuario tiene acceso a ella y puede llegar a manipularla.
+2. ¿Por qué setcookie() debe ejecutarse antes de enviar contenido?
+Porque las cookies son cabeceras.
+3. ¿Qué diferencia práctica existe entre una cookie de preferencia y una cookie que identifica una sesión autenticada?
+La cookie de sesion es la credencial de acceso del usuario mientras que la de preferencias son valores de uso en la web.

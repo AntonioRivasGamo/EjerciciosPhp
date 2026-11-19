@@ -1,7 +1,6 @@
 <?php
 require_once __DIR__ . '/includes/bootstrap.php';
 if (!isLoggedIn()) redirect('login.php');
-$user = $_SESSION['user'];
 ?>
 
 <!doctype html>
@@ -13,11 +12,8 @@ $user = $_SESSION['user'];
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="bg-<?= e($theme) ?>">
-    <h1>Bienvenido al dashboard <?= $user["name"] ?></h1>
-    <p>Rol: <?= $user["role"] ?></p>
-    <?php if ($user["role"] === "admin") : ?>
-    <a href="admin.php"><button>Admin</button></a>
-    <?php endif; ?>
-    <a href="logout.php"><button>Logout</button></a>
+    <?php meepleHeader($currentUser) ?>
+    <h1>Bienvenido al dashboard <?= $currentUser["name"] ?></h1>
+    <h2>Rol: <?= $currentUser["role"] ?></h2>
 </body>
 </html>

@@ -21,3 +21,5 @@ session_start();
 
 require_once __DIR__ . '/auth.php';
 require_once __DIR__ . '/navigation.php';
+require_once __DIR__ . '/../views/header.php';
+$currentUser = currentUser();

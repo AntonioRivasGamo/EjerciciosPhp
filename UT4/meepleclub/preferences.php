@@ -29,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="bg-<?= e($theme) ?>">
+<?php meepleHeader($currentUser) ?>
     <main>
         <section>
             <h1>Preferencias</h1>
@@ -44,7 +45,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <button type="submit">Guardar preferencias</button>
             </form>
         </section>
-        <a class="button" href="index.php">Ir a index</a>
     </main>
 </body>
 </html>

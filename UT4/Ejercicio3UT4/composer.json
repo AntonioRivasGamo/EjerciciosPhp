@@ -1,0 +1,14 @@
+{
+  "name": "antonio-rivas-gamo/ejercicio3ut4",
+  "description": "ÁREA PRIVADA DE UNA BIBLIOTECA DIGITAL",
+  "type": "project",
+  "require": {
+    "php": "^8.4"
+  },
+  "scripts": {
+    "serve": "php -S localhost:8000 -t public"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}

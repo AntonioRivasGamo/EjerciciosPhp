@@ -1,7 +1,6 @@
 <?php
     require_once __DIR__ . '/includes/bootstrap.php';
     requireRole('admin');
-    $currentUser = currentUser();
     $users = getUsers();
 ?>
 
@@ -14,6 +13,7 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="bg-<?= e($theme) ?>">
+<?php meepleHeader($currentUser) ?>
     <h1>Administracion</h1>
     <p>Bienvenido, <?= e($currentUser['name']) ?></p>
     <table class="table">

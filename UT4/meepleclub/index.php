@@ -1,5 +1,6 @@
 <?php
-    require_once __DIR__ . '/includes/bootstrap.php';
+
+require_once __DIR__ . '/includes/bootstrap.php';
     $_SESSION['visitas'] = ($_SESSION['visitas'] ?? 0) + 1;
 ?>
 
@@ -12,13 +13,12 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="bg-<?= e($theme) ?>">
+    <?php meepleHeader($currentUser) ?>
     <main>
         <section>
             <h1>Meeple Club</h1>
             <p>Aplicación para aficionados a los juegos de mesa</p>
         </section>
-        <a class="button" href="preferences.php">Ir a preferencias</a>
-        <a class="button" href="login.php">Ir a login</a>
         <p>Nos han visitado <?= $_SESSION['visitas'] ?> veces</p>
     </main>
 </body>
